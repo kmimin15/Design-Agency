@@ -1,0 +1,89 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background: #A770EF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.creative {
+  color: midnightblue;
+}
+
+.card {
+  width: 45%;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 2%;
+  padding: 10px;
+}
+
+.tile-image {
+  float: left;
+  margin-right: 30px;
+  height: 200px;
+  border-radius: 3%;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 30px;
+    background-color: rgba(255,255,255,0);
+    border-radius: 0%;
+    padding: 0px;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 950px)
+{
+  .card {
+    display: block;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 30px;
+    background-color: rgba(255,255,255,0);
+    border-radius: 0%;
+    padding: 0px;
+  }
+}
+
